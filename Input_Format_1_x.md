@@ -73,7 +73,7 @@ Taking the previous Penn Treebank sentence (mentioned in the **wordlist** part) 
 
 Please be noted that there might be a *root* node in the dependency tree.
 The root node will display if there are any edges with either an head or a dependency numbered -1.
-Elsewise, it will not appear.
+Otherwise, it will not appear.
 
 ##5. Deep Dependency Graph
 Same as **dependency tree**.

@@ -1,7 +1,7 @@
 #LinguaView
 LinguaView is an light-weight graphical tool aiming to aid manual construction of linguistically-deep corpuses.
 It reads in a series of tagged sentences (which is organised by a [defined xml format](https://github.com/shuoyangd/LinguaView/blob/master/Input_Format_1_x.md)) and displays the corresponding syntax representations.
-With a simple xml editor attached with the tool, the corpus builder may create or edit the syntax tags, and check his/her tagging work with the viewer at the first time.
+With a simple xml editor attached with the tool, the corpus builder may create or edit the syntax tags, and check his/her tagging work with the viewer at the first place.
 Currently, viewers for context-free grammar, dependency structure, deep dependency graph, combinatory categorial grammar and lexical functional grammar have been supported.
 
 LinguaView is developed by [Shuoyang Ding](mailto:dsy100@gmail.com), who is an intern research assistant in Language Computing & Web Mining Group, Peking University.
