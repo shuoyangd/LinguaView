@@ -69,7 +69,7 @@ Each edge of depedency tree is represented by a *tri-tuple*, which looks as foll
 
 The elements in the tuple are separated by space.
 The head and dependency are both represented by the id of tokens (starting from 0), assigned in the **wordlist**.
-Taking the previous Penn Treebank sentence (mentioned in the **wordlist** part) as example, if there is an edge labeled "A" between "join" and "board", with "board" as the head, the corresponding representation in the input would be (10, 8, A).
+Taking the previous Penn Treebank sentence (mentioned in the **wordlist** part) as example, if there is an edge labeled "A" between "join" and "board", with "board" as the head, the corresponding representation in the input would be (8, 10, A).
 
 Please be noted that there might be a *root* node in the dependency tree.
 The root node will display if there are any edges with either an head or a dependency numbered -1.
