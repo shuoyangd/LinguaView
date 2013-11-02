@@ -19,7 +19,7 @@ import java.util.List;
 public class TSNodeLabel {
 	public String label;
 	public TSNodeLabel parent;
-	public boolean isLexical;
+	public boolean isLexical = false;
 	public TSNodeLabel[] daughters;
 
 	/**
@@ -28,6 +28,7 @@ public class TSNodeLabel {
 	 * @param PennTree
 	 */
 	public TSNodeLabel(String PennTree) {
+		PennTree = PennTree.replaceAll("[\n\t\\ ]+", " ");
 		PennTree = PennTree.trim();
 		if(PennTree.matches("^\\( *\\)$") || PennTree.equals("")) {
 			label = null;
@@ -36,7 +37,7 @@ public class TSNodeLabel {
 			return;
 		}
 		
-		PennTree = PennTree.substring(PennTree.indexOf(' ') + 1, PennTree.lastIndexOf(')')).trim();
+		PennTree = PennTree.substring(PennTree.indexOf('(') + 1, PennTree.lastIndexOf(')')).trim();
 		//from here the PennTree string cannot be revised
 		//deal with label & parent & isLexical
 		label = PennTree.substring(PennTree.indexOf('(') + 1, PennTree.indexOf(' '));
@@ -93,7 +94,7 @@ public class TSNodeLabel {
 			isLexical = true;
 			startpt = currentPos.value;
 			for(int i = currentPos.value; i < PennTree.length(); i++) {
-				if(PennTree.charAt(i) == ')' && i > startpt) {
+				if((PennTree.charAt(i) == '(' || PennTree.charAt(i) == ')') && i > startpt) {
 					endpt = i;
 					break;
 				}
@@ -104,7 +105,7 @@ public class TSNodeLabel {
 		//deal with the daughters & isLexical
 		ArrayList<TSNodeLabel> L = new ArrayList<TSNodeLabel>();
 		currentPos.value = findNearestNonSpace(PennTree, endpt);
-		while(currentPos.value < PennTree.length()) {
+		while(currentPos.value < PennTree.length() && !isLexical) {
 			//for normal node
 			if(PennTree.charAt(currentPos.value) == '(') {
 				isLexical = false;

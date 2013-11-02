@@ -466,9 +466,9 @@ class TabbedPaneFrame extends JFrame {
 		aboutItem.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent event) {
 				JOptionPane.showConfirmDialog(TabbedPaneFrame.this,
-						"LinguaView 1.0 by Shuoyang Ding\n"
+						"LinguaView 1.0.1 by Shuoyang Ding\n"
 						+ "Language Computing & Web Mining Group, Peking University\n" 
-						+ "2013.10\n"
+						+ "2013.11\n"
 						+ "dsy100@gmail.com\n\n"
 						+ "LinguaView is an light-weight graphical tool aiming to\naid manual construction of linguistically-deep corpuses.\n"
 						+ "To help make this tool better, if you find any problems or bugs,\ndo not hesitate to email me.\n\n"
