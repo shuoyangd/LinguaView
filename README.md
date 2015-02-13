@@ -1,6 +1,7 @@
 #LinguaView
 *Release Note:* <br/>
-1.0.1 revised constituent part, so it can read trees that are written in multiple lines, like those in Penn-Treebank
+(As of Feb. 2015) LinguaView is undergoing major code refactoring in order to transform into a Google Web App
+(As of Nov. 2013) 1.0.1 revised constituent part, so it can read trees that are written in multiple lines, like those in Penn-Treebank
 
 LinguaView is an light-weight graphical tool aiming to aid manual construction of linguistically-deep corpuses.
 It reads in a series of tagged sentences (which is organised by a [defined xml format](https://github.com/shuoyangd/LinguaView/blob/master/Input_Format_1_x.md)) and displays the corresponding syntax representations.
