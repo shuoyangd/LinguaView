@@ -9,7 +9,7 @@ It reads in a series of tagged sentences (which is organised by a [defined xml f
 With a simple xml editor attached to the tool, the corpus builder may create or edit the syntax tags, and check his/her tagging work with the viewer at the first place.
 Currently, viewers for context-free grammar, dependency structure, deep dependency graph, combinatory categorial grammar and lexical functional grammar have been supported.
 
-LinguaView is developed by [Shuoyang Ding](mailto:dsy100@gmail.com), who is an intern research assistant in Language Computing & Web Mining Group, Peking University.
+LinguaView is developed by [Shuoyang Ding](mailto:shuoyangd@gmail.com), who was an intern research assistant in Language Computing & Web Mining Group, Peking University and is now a PhD student in Center for Speech and Language Processing, Johns Hopkins University.
 
 Acknowledgement goes to Federico Sangati, the original author of the constituent viewer part, and also to Weiwei Sun and Chen Wang, authors of the data structures that constitute an implementation of CCG.
 
