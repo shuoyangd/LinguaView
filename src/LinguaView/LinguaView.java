@@ -164,9 +164,9 @@ class TabbedPaneFrame extends JFrame {
 			GraphicsEnvironment ge = GraphicsEnvironment
 					.getLocalGraphicsEnvironment();
 			Font Lucida = Font.createFont(Font.TRUETYPE_FONT,
-					TabbedPaneFrame.class.getResourceAsStream("UIsrc" + File.separator + "LUCON.ttf"));
+					TabbedPaneFrame.class.getResourceAsStream("UIsrc/LUCON.ttf"));
 			Font Ubuntu = Font.createFont(Font.TRUETYPE_FONT,
-					TabbedPaneFrame.class.getResourceAsStream("UIsrc" + File.separator + "Ubuntu-R.ttf"));
+					TabbedPaneFrame.class.getResourceAsStream("UIsrc/Ubuntu-R.ttf"));
 			ge.registerFont(Lucida);
 			ge.registerFont(Ubuntu);
 
@@ -496,15 +496,15 @@ class TabbedPaneFrame extends JFrame {
 						java.awt.event.KeyEvent.CTRL_MASK));
 
 		// deal with the tool bar
-		Icon newIcon = new ImageIcon(TabbedPaneFrame.class.getResource("UIsrc" + File.separator + "new.png"));
-		Icon importIcon = new ImageIcon(TabbedPaneFrame.class.getResource("UIsrc" + File.separator + "import.png"));
-		Icon exportIcon = new ImageIcon(TabbedPaneFrame.class.getResource("UIsrc" + File.separator + "export.png"));
-		Icon zoomInIcon = new ImageIcon(TabbedPaneFrame.class.getResource("UIsrc" + File.separator + "zoomin.png"));
-		Icon zoomOutIcon = new ImageIcon(TabbedPaneFrame.class.getResource("UIsrc" + File.separator + "zoomout.png"));
-		Icon prevIcon = new ImageIcon(TabbedPaneFrame.class.getResource("UIsrc" + File.separator + "prev.png"));
-		Icon nextIcon = new ImageIcon(TabbedPaneFrame.class.getResource("UIsrc" + File.separator + "next.png"));
-		Icon jumpIcon = new ImageIcon(TabbedPaneFrame.class.getResource("UIsrc" + File.separator + "jump.png"));
-		Icon saveTextIcon = new ImageIcon(TabbedPaneFrame.class.getResource("UIsrc" + File.separator + "ok.png"));
+		Icon newIcon = new ImageIcon(TabbedPaneFrame.class.getResource("UIsrc/new.png"));
+		Icon importIcon = new ImageIcon(TabbedPaneFrame.class.getResource("UIsrc/import.png"));
+		Icon exportIcon = new ImageIcon(TabbedPaneFrame.class.getResource("UIsrc/export.png"));
+		Icon zoomInIcon = new ImageIcon(TabbedPaneFrame.class.getResource("UIsrc/zoomin.png"));
+		Icon zoomOutIcon = new ImageIcon(TabbedPaneFrame.class.getResource("UIsrc/zoomout.png"));
+		Icon prevIcon = new ImageIcon(TabbedPaneFrame.class.getResource("UIsrc/prev.png"));
+		Icon nextIcon = new ImageIcon(TabbedPaneFrame.class.getResource("UIsrc/next.png"));
+		Icon jumpIcon = new ImageIcon(TabbedPaneFrame.class.getResource("UIsrc/jump.png"));
+		Icon saveTextIcon = new ImageIcon(TabbedPaneFrame.class.getResource("UIsrc/ok.png"));
 
 		newButton.setIcon(newIcon);
 		importButton.setIcon(importIcon);
