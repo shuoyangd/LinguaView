@@ -1,7 +1,7 @@
 #LinguaView
 *Release Note:*
 
-+ (As of Feb. 2015) LinguaView is undergoing major code refactoring in order to transform into a Google Web App
++ (As of Sep. 2016) I have no intention in maintaining this project in the near future. Saying that, if you have any questions with this code base, I'll be more than happy to assist you.
 + (As of Nov. 2013) 1.0.1 revised constituent part, so it can read trees that are written in multiple lines, like those in Penn-Treebank
 
 LinguaView is an light-weight graphical tool aiming to aid manual construction of linguistically-deep corpora.
